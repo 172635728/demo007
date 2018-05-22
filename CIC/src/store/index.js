@@ -3,6 +3,7 @@ import Vuex from 'vuex';
 
 import app from './modules/app';
 import user from './modules/user';
+import expert from './modules/expert';
 
 Vue.use(Vuex);
 
@@ -18,8 +19,11 @@ const store = new Vuex.Store({
     },
     modules: {
         app,
-        user
+        user,
+        expert
     }
 });
+
+console.log(store);
 
 export default store;
